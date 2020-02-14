@@ -1,0 +1,5 @@
+package lv.danamark.employee;
+
+public class SalaryEmployee {
+
+}

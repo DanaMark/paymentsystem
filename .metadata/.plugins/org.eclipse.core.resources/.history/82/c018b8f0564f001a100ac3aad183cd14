@@ -1,0 +1,38 @@
+package lv.danamark.employee;
+
+import lv.danamark.paysystem.Payee;
+
+public class SalaryEmployee implements Payee {
+	
+	private String name;
+	private Integer bankacc;
+	protected Double grosswage;
+	
+	
+
+	public SalaryEmployee(String name, Integer bankacc, Double grosswage) {
+		this.name = name;
+		this.bankacc = bankacc;
+		this.grosswage = grosswage;
+	}
+
+	@Override
+	public String name() {
+		return name;
+	}
+
+	@Override
+	public Double grossPayment() {
+		return grossPayment;
+	}
+
+	@Override
+	public Integer bankacc() {
+		
+		return bankacc;
+	}
+	
+	
+	
+
+}
