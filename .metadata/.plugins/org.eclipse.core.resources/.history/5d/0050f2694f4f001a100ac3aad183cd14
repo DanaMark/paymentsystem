@@ -1,0 +1,5 @@
+package lv.danamark.paysystem;
+
+public class PaymentSystem {
+
+}
