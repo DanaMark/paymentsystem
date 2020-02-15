@@ -1,0 +1,40 @@
+package lv.danamark.test;
+
+import lv.danamark.employee.CommissionEmployee;
+import lv.danamark.employee.SalaryEmployee;
+import lv.danamark.paysystem.PaymentSystem;
+
+public class TestPayment {
+
+	
+	public static void main(String[] args) {
+		PaymentSystem paymentSystem = new PaymentSystem();
+		
+		CommissionEmployee toms = new CommissionEmployee("Toms Ozolins", 638636991, 5000.3);
+		
+		paymentSystem.addPayee(toms);
+				
+		CommissionEmployee ieva = new CommissionEmployee("Ieva Berzina", 60336991, 4005.3);
+		paymentSystem.addPayee(ieva);
+		
+		SalaryEmployee gatis = new SalaryEmployee("Gatis Kruums", 63262828, 1200.4);
+		paymentSystem.addPayee(gatis);
+		SalaryEmployee dace = new SalaryEmployee("Dace Egle", 7872628, 3456.6);
+		paymentSystem.addPayee(dace);
+		
+		toms.giveCommission(356.45);
+		toms.giveCommission(64.4);
+		ieva.giveCommission(56.6);
+		toms.giveCommission(35.45);
+		toms.giveCommission(34.4);
+		ieva.giveCommission(59.6);
+		
+		
+		//System.out.println(paymentSystem.payees);
+		
+		
+		paymentSystem.processPayments();
+		
+	}
+
+}

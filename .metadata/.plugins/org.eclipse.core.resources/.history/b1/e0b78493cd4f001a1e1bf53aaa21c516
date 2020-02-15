@@ -1,0 +1,25 @@
+package lv.danamark.employee;
+
+public class CommissionEmployee {
+
+	private String name;
+	private Integer bankacc;
+	protected Double grosswage;
+	
+	private Double grossComission = 0.0;
+	
+	
+	public CommissionEmployee(String name, Integer bankacc, Double grosswage) {
+		super();
+		this.name = name;
+		this.bankacc = bankacc;
+		this.grosswage = grosswage;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

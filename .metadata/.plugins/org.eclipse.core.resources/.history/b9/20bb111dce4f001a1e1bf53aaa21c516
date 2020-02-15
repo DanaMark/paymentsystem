@@ -1,0 +1,40 @@
+package lv.danamark.employee;
+
+import lv.danamark.paysystem.Payee;
+
+public class CommissionEmployee implements Payee {
+
+	private String name;
+	private Integer bankAcc;
+	protected Double grossWage;
+	
+	private Double grossComission = 0.0;
+	
+	
+	public CommissionEmployee(String name, Integer bankAcc, Double grossWage) {
+		super();
+		this.name = name;
+		this.bankAcc = bankAcc;
+		this.grossWage = grossWage;
+	}
+	@Override
+	public String name() {
+		return name;
+	}
+
+	@Override
+	public Double grossPayment() {
+		return grossWage;
+	}
+
+	@Override
+	public Integer bankacc() {
+		return bankAcc;
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

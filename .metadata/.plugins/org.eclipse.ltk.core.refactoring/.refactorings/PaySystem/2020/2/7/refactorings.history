@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;lv.dabamark.test&apos; to &apos;lv.danamark.test&apos;&#x0A;- Original project: &apos;PaySystem&apos;&#x0A;- Original element: &apos;PaySystem/src/lv.dabamark.test&apos;&#x0A;- Renamed element: &apos;PaySystem/src/lv.danamark.test&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;lv.dabamark.test&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;lv.dabamark.test" name="lv.danamark.test" qualified="false" references="true" stamp="1581756741563" textual="false" version="1.0"/>
+</session>
